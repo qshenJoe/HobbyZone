@@ -1,0 +1,317 @@
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark py-3">
+  <div class="container">
+    <a pageScroll href="#showcase" class="navbar-brand">
+      <img src="../assets/img/logo.png" alt="Logo" width="50" height="50">
+      <h3 class="d-inline align-middle display-5">HobbyZone</h3>
+    </a>
+    <button class="navbar-toggler" 
+    (click)="isCollapsed = !isCollapsed" 
+    [attr.aria-expanded]="!isCollapsed"
+    aria-controls="navbarNav"
+    arial-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" [ngbCollapse]="!isCollapsed">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a pageScroll href="#showcase" class="nav-link">Home</a>
+        </li>
+        <li ngbDropdown class="nav-item">
+          <a class="nav-link" ngbDropdownToggle id="dropdown">Intro</a>
+          <div ngbDropdownMenu aria-labelledby="dropdown">
+            <a pageScroll href="#intro" class="dropdown-item">Abstract</a>
+            <a pageScroll href="#objectives" class="dropdown-item">Objectives</a>
+            <!-- <a pageScroll href="#" class="dropdown-item">Link 3</a>
+            <a pageScroll href="#" class="dropdown-item">Link 4</a>
+            <a pageScroll href="#" class="dropdown-item">Link 5</a> -->
+          </div>
+          <!-- <a href="#intro" class="nav-link">Intro</a> -->
+        </li>
+        <li class="nav-item">
+          <a pageScroll href="#timeline" class="nav-link">Timeline</a>
+        </li>
+        <li class="nav-item">
+          <a pageScroll href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- SHOWCASE -->
+<section id="showcase" class="py-5">
+  <div class="primary-overlay text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-center">
+          <h1 class="display-2 mt-5 pt-5">
+            What are your hobbies...
+          </h1>
+          <p class="lead">This is a demonstration website of our senior project HobbyZone</p>
+          <a pageScroll href="#intro" class="btn btn-outline-secondary btn-lg text-white"><i class="fa fa-arrow-right"></i> Read More</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="../assets/img/hobby.png" alt="" class="img-fluid d-none d-lg-block py-5">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO SECTION -->
+<section id="intro" class="py-5 text-center bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="info-header mb-5">
+          <h1 class="text-primary pb-3">
+            Abstract
+          </h1>
+          <p class="lead pb-3">
+              This project will realize a web based social media application, users will be able to upload or view the different posts that sent by different users. The HTML 5, CSS 3, Python 3 and Node.JS are the key techniques. Machine learning will be the main part of this project. Different datasets will be used for training.The ROUGE will be the method to do the evaluation.This project will be able to stort posts uploaded by uses in the database, cluster posts into different topics and summarizing content of every posts and each topic, which will make the online communication more interactive.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OBJECTIVES SECTION -->
+<section id="objectives" class="py-5 text-center bg-dark text-white">
+  <div class="containder">
+    <div class="row">
+      <div class="col">
+        <div class="info-header mb-5">
+          <h1 class="text-white pb-3">
+            Objectives
+          </h1>
+          <p class="lead pb-3">
+              To create an application of social media based on website, we will achieve the following four goals:
+          </p>
+          <ul class="list-group mb-5 text-left">
+            <li class="list-group-item text-dark">
+              <span><i class="fa fa-angle-right"></i></span>
+              Creating a search engine based on keyword search on the website
+            </li>
+            <li class="list-group-item list-group-item-dark">
+              <span><i class="fa fa-angle-right"></i></span>
+                Storing posts uploaded by uses in the database.
+            </li>
+            <li class="list-group-item text-dark">
+              <span><i class="fa fa-angle-right"></i></span>
+              Clustering posts into different categories and all relevant posts can be accessed via corresponding tags.
+            </li>
+            <li class="list-group-item list-group-item-dark">
+              <span><i class="fa fa-angle-right"></i></span>
+              Summarizing content of each post and topic.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE SECTION -->
+<section id="timeline" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <h4>Timeline and Deliverables</h4>
+          </div>
+          <table class="table table-striped">
+            <thead class="thead-inverse">
+              <tr>
+                <th>Plans</th>
+                <th>Date</th>
+                <th>Accomplishment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">plan</td>
+                <td>Week 1 (Feb 5 - Feb 11)</td>
+                <td>Survey and Review</td>
+              </tr>
+              <tr>
+                <td scope="row">plan</td>
+                <td>Week 2 - 3 (Feb 12 - Feb 25)</td>
+                <td>Survey and Review</td>
+              </tr>
+              <tr>
+                <td scope="row">plan</td>
+                <td>Week 4 - 5 (Feb 26 - Mar 11)</td>
+                <td>Data collection and preprocessing</td>
+              </tr>
+              <tr>
+                <td scope="row">plan</td>
+                <td>Week 6 - 9 (Mar 12 - Apr 8)</td>
+                <td>Feature extration and analysis</td>
+              </tr>
+              <tr>
+                <td scope="row">plan</td>
+                <td>Week 10 - 11 (Apr 9 - Apr 22)</td>
+                <td>Modelization</td>
+              </tr>
+              <tr>
+                <td scope="row">plan</td>
+                <td>Week 12 (Apr 23 - Apr 29)</td>
+                <td>Evaluation and result analysis</td>
+              </tr>
+              <tr>
+                <td scope="row">plan</td>
+                <td>Week 13 (Apr 30 - May 6)</td>
+                <td>Documentation</td>
+              </tr>
+              <tr>
+                <td scope="row">plan</td>
+                <td>Week 14 (Feb 5 - Feb 11)</td>
+                <td>Presentation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="info-header mb-5">
+        <h1 class="text-primary pb-3">
+          Contact Us
+        </h1>
+        <p class="lead pb-3">
+          Basic information about our team members
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <p>image</p>
+              <h3>Qiaohong Shen</h3>
+              <h5 class="text-muted">Front end developer</h5>
+              <p>ID: 1054830 <br>Department of Computer Science</p>
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-lg-2 p-4">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="p-lg-2 p-4">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="p-lg-2 p-4">
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <i class="fa fa-angular"></i>
+              <h3>Li Ding</h3>
+              <h5 class="text-muted">Back end developer</h5>
+              <p>ID: 1054684 <br>Department of Computer Science</p>
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <i class="fa fa-angular"></i>
+              <h3>Mingzi Chen</h3>
+              <h5 class="text-muted">Back end developer</h5>
+              <p>ID: 1054918 <br>Department of Computer Science</p>
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-lg-2 p-4">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="p-lg-2 p-4">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="p-lg-2 p-4">
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <i class="fa fa-angular"></i>
+              <h3>Anli Zhong</h3>
+              <h5 class="text-muted">Model Builder</h5>
+              <p>ID: 1054968 <br>Department of Computer Science</p>
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <i class="fa fa-angular"></i>
+              <h3>Yuwen Wang</h3>
+              <h5 class="text-muted">Model Builder</h5>
+              <p>ID: 1054679 <br>Department of Computer Science</p>
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-lg-2 p-4">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="p-lg-2 p-4">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="p-lg-2 p-4">
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="main-footer" class="py-5 bg-dark text-white">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-6 ml-auto">
+        <p class="lead">
+          &copy; 2018
+          <a href="http://nyit.edu" class="text-white">New York Institute of Technology</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
